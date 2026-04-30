@@ -42,11 +42,11 @@ public class SistemaMovilidadTest {
         Usuario usuario = new Usuario("Juan");
         Vehiculo bici = new Bicicleta(false, 26);
         sistema.registrarVehiculo(bici);
-        RuntimeException ex = assertThrows(RuntimeException.class, () -> {
+        RuntimeException mensaje = assertThrows(RuntimeException.class, () -> {
             sistema.registrarAlquiler(usuario, bici, "05.08.25", "05.10.25");
         });
 
-        assertEquals("El vehículo no está disponible", ex.getMessage());
+        assertEquals("El vehículo no está disponible", mensaje.getMessage());
     }
 
     @Test
