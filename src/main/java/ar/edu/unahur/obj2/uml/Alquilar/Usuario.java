@@ -1,6 +1,5 @@
 package ar.edu.unahur.obj2.uml.Alquilar;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +15,7 @@ public class Usuario {
 
     public void agregarAlquiler(Alquiler alquiler) { alquileres.add(alquiler); }
 
-    public void alquilar(Vehiculo vehiculo, LocalDate inicio, LocalDate fin) {
+    public void alquilar(Vehiculo vehiculo, String inicio, String fin) {
         SistemaMovilidad.getInstance().registrarAlquiler(this, vehiculo, inicio, fin);
     }
 

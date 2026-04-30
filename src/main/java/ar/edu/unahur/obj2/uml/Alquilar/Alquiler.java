@@ -1,16 +1,14 @@
 package ar.edu.unahur.obj2.uml.Alquilar;
 
-import java.time.LocalDate;
-
 import ar.edu.unahur.obj2.uml.Vehiculos.Vehiculo;
 
 public class Alquiler {
-    private LocalDate fechaInicial;
-    private LocalDate fechaFinal;
+    private String fechaInicial;
+    private String fechaFinal;
     private Usuario usuario;
     private Vehiculo vehiculo;
 
-    public Alquiler(Usuario usuario, Vehiculo vehiculo, LocalDate fechaInicial, LocalDate fechaFinal) {
+    public Alquiler(Usuario usuario, Vehiculo vehiculo, String fechaInicial, String fechaFinal) {
         this.usuario = usuario;
         this.vehiculo = vehiculo;
         this.fechaInicial = fechaInicial;
